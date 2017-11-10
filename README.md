@@ -58,7 +58,17 @@ Conjured items increase in value over time, such as Aged Brie, will have the sam
 quality growth as normal items of the same type. The property of an item being conjured 
 only affects its rate of depreciation, not an increase in quality.
 
-## Major changes:
+## Functionality
+
+The Class Item is functionally unchanged from the starting code, with the only additions 
+being a pair of constructors to initialize none or all of the fields respectively.
+
+The Class SDSChallenge addresses the requirements of the system. The updateItems method 
+is the sole entry point, and updates the sell-by date and quality of every item in an array 
+passed into it.
+
+The Class SDSChallengeTest provides a number of basic unit tests for the methods in 
+SDSChallenge.
 
 Much of the provided code has been restructured, in addition to adding the new "conjured 
 item" functionality. The most notable additions include:
